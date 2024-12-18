@@ -1,0 +1,35 @@
+{
+  "type": "Self Speculative Decoding With Naive Offloading",
+  "task": "cnn_dailymail",
+  "n_shot": 1,
+  "length": 50,
+  "rouge-1": 0.2829055204455393,
+  "rouge-2": 0.11070809441479307,
+  "rouge-l": 0.18380462993029978,
+  "rouge-lsum": 0.1838154642844256,
+  "elapsed_time": 2975.3302838802338,
+  "generated_tokens": 12389,
+  "model_memory": 6.273824691772461,
+  "peak_memory": 15.87728500366211,
+  "inputs": {
+    "model_id": "microsoft/Phi-3-mini-4k-instruct",
+    "num_offload_layers": 4,
+    "search_iteration": 1000,
+    "csv_filename": "config/phi-3-mini/offload_4-search_1000/searching.csv",
+    "json_filename": "config/phi-3-mini/offload_4-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+      4,
+      7,
+      11,
+      12
+    ],
+    "skip_mlp_layers": [
+      9,
+      11,
+      12,
+      14,
+      22,
+      23
+    ]
+  }
+}

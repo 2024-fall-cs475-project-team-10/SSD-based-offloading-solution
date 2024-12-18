@@ -1,0 +1,36 @@
+{
+  "type": "Self Speculative Decoding",
+  "task": "xsum",
+  "n_shot": 1,
+  "length": 50,
+  "rouge-1": 0.21455496293643522,
+  "rouge-2": 0.05541903707017087,
+  "rouge-l": 0.1491492219678163,
+  "rouge-lsum": 0.14900653113009715,
+  "elapsed_time": 453.63696670532227,
+  "generated_tokens": 5250,
+  "model_memory": 5.234714508056641,
+  "peak_memory": 6.972429275512695,
+  "inputs": {
+    "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+    "num_offload_layers": 4,
+    "search_iteration": 1000,
+    "csv_filename": "config/llama-3.2-3b/offload_4-search_1000/searching.csv",
+    "json_filename": "config/llama-3.2-3b/offload_4-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+      2,
+      6,
+      8,
+      9,
+      23,
+      25,
+      26
+    ],
+    "skip_mlp_layers": [
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

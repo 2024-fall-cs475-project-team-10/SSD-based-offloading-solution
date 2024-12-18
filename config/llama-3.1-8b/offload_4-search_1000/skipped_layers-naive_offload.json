@@ -1,0 +1,30 @@
+{
+    "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "num_offload_layers": 4,
+    "search_iteration": 1000,
+    "csv_filename": "config/llama-3.1-8b/offload_4-search_1000/searching-naive_offload.csv",
+    "json_filename": "config/llama-3.1-8b/offload_4-search_1000/skipped_layers-naive_offload.json",
+    "skip_attn_layers": [
+        1,
+        2,
+        5,
+        9,
+        10,
+        23,
+        24,
+        26,
+        28,
+        29,
+        30,
+        31
+    ],
+    "skip_mlp_layers": [
+        1,
+        9,
+        18,
+        28,
+        29,
+        30,
+        31
+    ]
+}

@@ -1,0 +1,47 @@
+{
+  "type": "Self Speculative Decoding With Naive Offloading",
+  "task": "cnn_dailymail",
+  "n_shot": 1,
+  "length": 50,
+  "rouge-1": 0.3350200084066204,
+  "rouge-2": 0.13063008410657265,
+  "rouge-l": 0.2089408739920504,
+  "rouge-lsum": 0.20942048137750074,
+  "elapsed_time": 1959.3282551765442,
+  "generated_tokens": 8115,
+  "model_memory": 4.859714508056641,
+  "peak_memory": 7.335826873779297,
+  "inputs": {
+    "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+    "num_offload_layers": 6,
+    "search_iteration": 1000,
+    "csv_filename": "config/llama-3.2-3b/motivation/offload_0-search_1000/searching.csv",
+    "json_filename": "config/llama-3.2-3b/motivation/offload_0-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+      1,
+      3,
+      5,
+      6,
+      8,
+      9,
+      12,
+      18,
+      20,
+      22,
+      27
+    ],
+    "skip_mlp_layers": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      13,
+      17,
+      22,
+      23
+    ]
+  }
+}

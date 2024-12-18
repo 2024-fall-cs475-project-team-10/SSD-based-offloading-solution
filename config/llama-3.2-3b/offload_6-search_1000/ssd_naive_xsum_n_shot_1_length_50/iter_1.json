@@ -1,0 +1,38 @@
+{
+  "type": "Self Speculative Decoding With Naive Offloading",
+  "task": "xsum",
+  "n_shot": 1,
+  "length": 50,
+  "rouge-1": 0.212431939182119,
+  "rouge-2": 0.05351443772428251,
+  "rouge-l": 0.14843587792588236,
+  "rouge-lsum": 0.1489460647508314,
+  "elapsed_time": 1323.391931295395,
+  "generated_tokens": 5180,
+  "model_memory": 4.859714508056641,
+  "peak_memory": 6.597429275512695,
+  "inputs": {
+    "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+    "num_offload_layers": 6,
+    "search_iteration": 1000,
+    "csv_filename": "config/llama-3.2-3b/offload_6-search_1000/searching.csv",
+    "json_filename": "config/llama-3.2-3b/offload_6-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      15,
+      19
+    ],
+    "skip_mlp_layers": [
+      4,
+      5,
+      9,
+      20,
+      21,
+      23
+    ]
+  }
+}

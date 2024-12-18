@@ -1,0 +1,7 @@
+{
+    "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "num_offload_layers": 6,
+    "search_iteration": 1000,
+    "csv_filename": "config/llama-3.1-8b/offload_6-search_1000/searching.csv",
+    "json_filename": "config/llama-3.1-8b/offload_6-search_1000/skipped_layers.json"
+}

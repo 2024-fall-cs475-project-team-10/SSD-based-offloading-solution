@@ -1,0 +1,33 @@
+{
+  "type": "Self Speculative Decoding",
+  "task": "cnn_dailymail",
+  "n_shot": 1,
+  "length": 50,
+  "rouge-1": 0.2890651185205878,
+  "rouge-2": 0.11436131509268624,
+  "rouge-l": 0.1893840844517772,
+  "rouge-lsum": 0.18938093529206834,
+  "elapsed_time": 1258.3436632156372,
+  "generated_tokens": 12250,
+  "model_memory": 6.695699691772461,
+  "peak_memory": 16.299135208129883,
+  "inputs": {
+    "model_id": "microsoft/Phi-3-mini-4k-instruct",
+    "num_offload_layers": 2,
+    "search_iteration": 1000,
+    "csv_filename": "config/phi-3-mini/offload_2-search_1000/searching.csv",
+    "json_filename": "config/phi-3-mini/offload_2-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+      0,
+      4
+    ],
+    "skip_mlp_layers": [
+      4,
+      5,
+      9,
+      10,
+      14,
+      24
+    ]
+  }
+}

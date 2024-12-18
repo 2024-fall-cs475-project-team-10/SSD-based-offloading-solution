@@ -1,0 +1,39 @@
+{
+    "model_id": "microsoft/Phi-3-medium-4k-instruct",
+    "num_offload_layers": 6,
+    "search_iteration": 1000,
+    "csv_filename": "config/phi-3-medium/motivation/offload_0-search_1000/searching.csv",
+    "json_filename": "config/phi-3-medium/motivation/offload_0-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+        2,
+        4,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        18,
+        25,
+        28,
+        32,
+        34,
+        38
+    ],
+    "skip_mlp_layers": [
+        0,
+        2,
+        3,
+        13,
+        14,
+        16,
+        17,
+        18,
+        26,
+        28,
+        29,
+        30,
+        31,
+        33
+    ]
+}

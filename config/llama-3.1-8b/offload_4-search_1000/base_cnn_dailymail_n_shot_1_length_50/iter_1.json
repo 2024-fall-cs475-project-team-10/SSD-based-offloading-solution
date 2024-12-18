@@ -1,0 +1,38 @@
+{
+  "type": "Baseline",
+  "task": "cnn_dailymail",
+  "n_shot": 1,
+  "length": 50,
+  "rouge-1": 0.36109948808710435,
+  "rouge-2": 0.1463536651442755,
+  "rouge-l": 0.21901881032295073,
+  "rouge-lsum": 0.21968591806910814,
+  "elapsed_time": 1777.687923192978,
+  "generated_tokens": 7351,
+  "model_memory": 13.332542419433594,
+  "peak_memory": 15.863585948944092,
+  "inputs": {
+    "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "num_offload_layers": 4,
+    "search_iteration": 1000,
+    "csv_filename": "config/llama-3.1-8b/offload_4-search_1000/searching.csv",
+    "json_filename": "config/llama-3.1-8b/offload_4-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+      4,
+      5,
+      8,
+      9,
+      21,
+      23,
+      26,
+      28,
+      29
+    ],
+    "skip_mlp_layers": [
+      4,
+      7,
+      8,
+      25
+    ]
+  }
+}

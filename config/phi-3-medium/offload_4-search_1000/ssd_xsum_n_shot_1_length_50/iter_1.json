@@ -1,0 +1,39 @@
+{
+  "type": "Self Speculative Decoding",
+  "task": "xsum",
+  "n_shot": 1,
+  "length": 50,
+  "rouge-1": 0.0702998981355567,
+  "rouge-2": 0.01790650074235548,
+  "rouge-l": 0.05754107716076142,
+  "rouge-lsum": 0.05747940080612411,
+  "elapsed_time": 2937.704962491989,
+  "generated_tokens": 24147,
+  "model_memory": 23.535947799682617,
+  "peak_memory": 27.386545181274414,
+  "inputs": {
+    "model_id": "microsoft/Phi-3-medium-4k-instruct",
+    "num_offload_layers": 4,
+    "search_iteration": 1000,
+    "csv_filename": "config/phi-3-medium/offload_4-search_1000/searching.csv",
+    "json_filename": "config/phi-3-medium/offload_4-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+      4,
+      5,
+      8,
+      10,
+      11,
+      13,
+      14,
+      27,
+      30
+    ],
+    "skip_mlp_layers": [
+      0,
+      4,
+      8,
+      13,
+      29
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "type": "Baseline",
+  "task": "xsum",
+  "n_shot": 1,
+  "length": 50,
+  "rouge-1": 0.06909667275561931,
+  "rouge-2": 0.018956784067653172,
+  "rouge-l": 0.0582174348968138,
+  "rouge-lsum": 0.05810508377996958,
+  "elapsed_time": 8912.021833658218,
+  "generated_tokens": 24551,
+  "model_memory": 23.535947799682617,
+  "peak_memory": 27.38798952102661,
+  "inputs": {
+    "model_id": "microsoft/Phi-3-medium-4k-instruct",
+    "num_offload_layers": 4,
+    "search_iteration": 1000,
+    "csv_filename": "config/phi-3-medium/offload_4-search_1000/searching.csv",
+    "json_filename": "config/phi-3-medium/offload_4-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+      4,
+      5,
+      8,
+      10,
+      11,
+      13,
+      14,
+      27,
+      30
+    ],
+    "skip_mlp_layers": [
+      0,
+      4,
+      8,
+      13,
+      29
+    ]
+  }
+}

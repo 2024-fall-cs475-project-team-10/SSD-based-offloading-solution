@@ -1,0 +1,19 @@
+{
+    "model_id": "microsoft/Phi-3-mini-4k-instruct",
+    "num_offload_layers": 2,
+    "search_iteration": 1000,
+    "csv_filename": "config/phi-3-mini/offload_2-search_1000/searching.csv",
+    "json_filename": "config/phi-3-mini/offload_2-search_1000/skipped_layers.json",
+    "skip_attn_layers": [
+        0,
+        4
+    ],
+    "skip_mlp_layers": [
+        4,
+        5,
+        9,
+        10,
+        14,
+        24
+    ]
+}
